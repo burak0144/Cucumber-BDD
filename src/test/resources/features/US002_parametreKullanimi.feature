@@ -27,4 +27,4 @@ Feature: US002 Parametre Kullanimi
     # Feature dosyasinda parametreli arama yaptigimizda ""(tirnak) icine aldigimiz degeri
 # StepDefinition'da 1 kere parametreli bir method olusturur ve yeni bir arama yapmak istedigimizde
 # yeni bir method olusturmadan feature dosyasindan ""(tirnak) icindeki ifadeyi degistirmemiz
-# yeterli olacaktir boylece kodlarimiz dinamik olacaktir
+# yeterli olacaktir boylece kodlarimiz dinamik olacaktir.
