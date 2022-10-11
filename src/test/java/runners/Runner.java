@@ -6,13 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-     features="src/test/resources/features",
-     glue="stepDefinitions",
-     tags="@parametre",
-     dryRun = false
+        features = "src/test/resources/features",
+        glue = "stepDefinitions",
+        tags = "@gp2 or @bunu", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
+        dryRun = false
+
 )
-
-
 public class Runner {
     /*
      Runner Class'ı TestNG'deki XMl mantığı ile çalışır. Çalıştırmak istediğimiz senartolara tag belirtiriz
@@ -30,4 +29,5 @@ public class Runner {
     dryRun = true; dersek testimizi çalıştırmadan eksik adımları bize verir
     dryRun = false; testlerimizi driver ile çalıştırır.
      */
+
 }

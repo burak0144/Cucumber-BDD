@@ -3,8 +3,8 @@ Feature: Amazon Search
    @gp1
   Scenario: TC01 Kullanci amazonda nutella aratir
 
-    Given Kullanici amazon sayfasina gider
-    Then Kullanici nutella aratir
+    Given kullanici amazon sayfasina gider
+    Then kullanici nutella aratir
     And  sonuclarin nutella icerdigini test eder
 
   @gp3
