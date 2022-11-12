@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -17,16 +18,16 @@ public class GridStepDefs {
 
     @Given("user is on the application_url {string}")
     public void user_is_on_the_application_url(String url) throws MalformedURLException {
-        driver = new RemoteWebDriver(new URL("http://192.168.1.156:4444"),new ChromeOptions());
+        driver = new RemoteWebDriver(new URL("http://192.168.1.33:4444"),new ChromeOptions());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get(url);
     }
 
     @Then("verify the page title is {string}")
-    public void verify_the_page_title_is(String expextedTitle) {
+    public void verify_the_page_title_is(String expectedTitle) {
         String actualTitle = driver.getTitle();
-        Assert.assertEquals("Title uyusmadi", expextedTitle,actualTitle);
+        Assert.assertEquals("Title uyusmadi", expectedTitle,actualTitle);
     }
     @Then("close the remote driver")
     public void close_the_remote_driver() {
@@ -34,9 +35,9 @@ public class GridStepDefs {
     }
 
 
-    @Given("user is on the application_url with firefox {string}")
-    public void userIsOnTheApplication_urlWithFirefox(String url) throws MalformedURLException {
-        driver = new RemoteWebDriver(new URL("http://192.168.1.156:4444"),new FirefoxOptions());
+    @Given("user is on the application_url with edge {string}")
+    public void userIsOnTheApplication_urlWithEdge(String url) throws MalformedURLException {
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"),new EdgeOptions());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get(url);
