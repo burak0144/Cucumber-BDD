@@ -1,7 +1,7 @@
 @parametre
 Feature: US002 Parametre Kullanimi
   Background: Ortak adim
-    Given Kullanici amazon sayfasina gider
+    Given kullanici amazon sayfasina gider
 
 
   Scenario: TC01 Kullanici amazonda parametreli arama yapar
@@ -9,10 +9,11 @@ Feature: US002 Parametre Kullanimi
     Then kullanici "nutella" icin arama yapar
     And sonuclarin "nutella" icerdigini test eder
 
+    @slnym
   Scenario: TC02 Kullanici amazonda parametreli arama yapar
     Then kullanici "selenium" icin arama yapar
     And sonuclarin "selenium" icerdigini test eder
-
+   @slnym2
   Scenario: TC03 Kullanici amazonda parametreli arama yapar
     Then kullanici "java" icin arama yapar
     And sonuclarin "java" icerdigini test eder

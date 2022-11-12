@@ -4,21 +4,21 @@ Feature: Amazon Search
   Scenario: TC01 Kullanci amazonda nutella aratir
 
     Given kullanici amazon sayfasina gider
-    Then kullanici nutella aratir
-    And  sonuclarin nutella icerdigini test eder
+    Then kullanici Nutella icin arama yapar
+    And  sonuclarin Nutella icerdigini test eder
 
   @gp3
   Scenario: TC02 Kullanci amazonda selenium aratir
 
-    Given Kullanici amazon sayfasina gider
-    Then Kullanici Selenium aratir
+    Given kullanici amazon sayfasina gider
+    Then kullanici Selenium icin arama yapar
     And  sonuclarin Selenium icerdigini test eder
 
   @gp2
   Scenario: TC03 Kullanci amazonda iphone aratir
 
-    Given Kullanici amazon sayfasina gider
-    Then Kullanici iphone aratir
-    And  sonuclarin iphone icerdigini test eder
-    And  sayfayi kapatin
+    Given kullanici amazon sayfasina gider
+    Then kullanici SQL icin arama yapar
+    And  sonuclarin SQL icerdigini test eder
+    And  sayfayi kapatir
 
