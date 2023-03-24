@@ -1,0 +1,13 @@
+pages\AmazonPage.class
+runners\Runner.class
+stepDefinitions\AmazonStepDefinitions.class
+pages\DemoGuruPage.class
+runners\TestRunner.class
+utilities\Driver.class
+stepDefinitions\BlueRentACarStepDefinition.class
+stepDefinitions\DemoGuruStepDefinitions.class
+pages\BrcPage.class
+stepDefinitions\HepsiBuradaStepDefinition.class
+stepDefinitions\Hooks.class
+runners\TestRunner2.class
+utilities\ConfigReader.class
